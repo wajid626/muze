@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Recommendation</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/148/148724.svg">
+    <link rel="stylesheet" href="../static/css/main.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <center>Music Recommendation System with Deep Learning</center>
+        </h1>
+
+        {% block content %} {% for message in form.seed.errors %}
+        <div class="flash">{{ message }}</div>
+        {% endfor %}
+        <form method=post>
+            {{ form.seed.label }} {{ form.seed }} {{ form.submit }}
+        </form>
+        {% endblock %}
+
+    </div>
+    <footer>
+        <p>made by <a href="https://github.com/namngduc"> namduc</a> ♡
+    </footer>
+
+
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="wajid-123"
+  agent-id="21d37e78-5023-47db-8f77-8fa3948ba08a"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="wajid-vertex-chat-bot">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
+</body>
+
+</html>

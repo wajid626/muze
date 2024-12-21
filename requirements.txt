@@ -1,0 +1,17 @@
+Flask
+audioread
+librosa
+torch
+torchsummary
+torchvision
+tornado
+pandas
+tensorflow
+opencv-python
+numpy
+scikit-learn
+WTForms==3.1.2
+seaborn==0.13.2
+scipy
+
+
